@@ -90,11 +90,5 @@ ai-image-gen/
 
 ---
 
-## How It Works (for interviews)
+Live Link-
 
-1. User types a prompt + selects style/size
-2. React sends POST to `/generate` on FastAPI
-3. FastAPI calls **Claude API** to improve the prompt (e.g. "car" → "luxury electric sports car, cinematic lighting, 8k")
-4. FastAPI calls **Hugging Face Inference API** (Stable Diffusion 2) with the enhanced prompt
-5. Image returned as base64, displayed in React
-6. User can download or regenerate
