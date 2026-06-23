@@ -1,6 +1,6 @@
 # VisualAI — Text to Image Generator
 
-**Tech Stack:** React · FastAPI · Claude AI (prompt enhancement) · Stable Diffusion (Hugging Face)
+**Tech Stack:** React · FastAPI · Stable Diffusion 
 
 ---
 
