@@ -2,7 +2,7 @@ import { useState, useRef } from "react";
 import axios from "axios";
 import "./App.css";
 
-const API_BASE = "http://localhost:8000";
+const API_BASE = "https://ai-image-generator-backend-arsa.onrender.com";
 
 const STYLES = [
   { value: "realistic", label: "Realistic", icon: "📷" },
