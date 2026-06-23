@@ -16,12 +16,14 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=[
+        "http://localhost:3000",
+        "https://ai-image-generator-nu-green.vercel.app"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 HF_API_KEY = os.getenv("HF_API_KEY")
 
 HF_MODEL_URL = (
