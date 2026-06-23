@@ -17,9 +17,10 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:3000",
-        "https://ai-image-generator-nu-green.vercel.app"
-    ],
+    "http://localhost:3000",
+    "https://ai-image-generator-nu-green.vercel.app",
+    "https://ai-image-generator-66l5xfvut-kaushikii-s-projects.vercel.app"
+],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
