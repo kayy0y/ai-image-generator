@@ -483,3 +483,136 @@ body {
   .header { padding: 16px 20px; }
   .history-section { padding: 0 20px; }
 }
+
+/* ─── Mode Toggle ────────────────────────────────── */
+.mode-toggle {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 4px;
+}
+
+.mode-btn {
+  flex: 1;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-family: var(--font);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px 10px;
+  transition: all 0.15s;
+}
+
+.mode-btn.active {
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+}
+
+/* ─── Upload Zone ────────────────────────────────── */
+.upload-zone {
+  border: 2px dashed var(--border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 32px 20px;
+  transition: all 0.15s;
+  color: var(--text-muted);
+  font-size: 13px;
+  text-align: center;
+}
+
+.upload-zone:hover {
+  border-color: var(--accent);
+  background: var(--accent-glow);
+  color: var(--text);
+}
+
+.upload-icon { font-size: 28px; }
+
+.upload-preview {
+  position: relative;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.preview-img {
+  width: 100%;
+  display: block;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.clear-upload {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(0,0,0,0.7);
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 11px;
+  padding: 4px 8px;
+}
+
+/* ─── Compare Row ────────────────────────────────── */
+.compare-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.compare-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.compare-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.compare-img {
+  width: 100%;
+  border-radius: var(--radius-sm);
+  display: block;
+  border: 1px solid var(--border);
+}
+
+.compare-arrow {
+  font-size: 20px;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+/* ─── Large preview in empty state ──────────────── */
+.preview-large {
+  width: 100%;
+  border-radius: var(--radius-sm);
+  display: block;
+  opacity: 0.6;
+  border: 1px solid var(--border);
+}
+
+.empty-hint {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 12px;
+}
